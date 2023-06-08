@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Fasticore SreenRecorder</title>
+</head>
+<body>
+    <main>
+        <nav class="navbar bg-primary">
+            <div class="container-fluid text-center">
+              <span class="navbar-brand mb-0 h1 text-white">
+                <img style="width: 100px; height: 35px;" src="./img/logo-light.png" alt="Fasticore ScreenRecorder">
+              </span>
+              <span class="mb-0 h3 text-white">Fasticore SreenRecorder</span>
+            </div>
+        </nav>
+           
+        <div class="container-fluid">
+            <div class="row mt-3 ">
+                <div class="col-md-8">
+                    <div class="card"hi>
+                        <div class="card-header">
+                            <h4 id="displayTitle">Video Recording</h4>
+                        </div>
+                        <div class="card-body bg-dark" style="min-height: 38vh;">
+                            <video id="recordingFeedback" style="width: 100%; height: auto;" src="" autoplay></video>
+                        </div>
+                        <div class="card-footer d-flex justify-content-center">
+                            <button id="startRecording" class="btn btn-primary mr-2">
+                                <i class="fas fa-plus fa-2x"></i> 
+                                Start Recording
+                            </button>
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            <button id="stopRecording"  class="btn btn-danger ml-2" disabled>
+                                <i class="fas fa-plus fa-2x"></i> 
+                                Stop Recording
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <br><br><br>
+                    <div class="bg-dark card" style="min-height: 50vh;">
+                        <div style="margin:auto; padding:3rem;" class="text-white">
+                            <video id="recorededVideo" style="width: 100%; height: auto; display: none;" src="" autoplay></video>
+                            <span class="add-text">Recorded video will apear here</span>
+                        </div>
+                    </div>
+                    <div class="row mx-1" id="downloadContainer"  style="display:none">
+                        <a href="#" id="downloadVideo" class="btn btn-info">Download Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
